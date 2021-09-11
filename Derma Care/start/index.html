@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poiret+One&family=Raleway:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+
+      <div class="header__inner">
+        <a class="catalog" href="#">Каталог</a>
+        <div class="menu__content">
+          <nav class="menu">
+            <div class="menu__btn">
+              <span></span>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">О магазине </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Доставка и Оплата</a>
+              </li>
+
+              <div class="logo">
+                <h1 class="">
+                  DERMA CARE
+                </h1>
+              </div>
+
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Бренды </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="search__inner">
+          <div class="search__item-1">
+            <span></span>
+          </div>
+          <div class="search__item-2"></div>
+          <div class="search__item-3"></div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="order">
+    <div class="container">
+
+      <div class="arrow__left"></div>
+
+      <div class="order__content">
+        <div class="order__inner">
+
+          <div class="order__block-1">
+            <div class="order__title">
+              Оформление заказа
+            </div>
+            <div class="order__subtitle-1">
+              Выберете тип оплаты:
+            </div>
+            <div class="order-inner__button-1">
+              <div class="order__button-1">
+                <button>
+                  Наличный расчёт
+                </button>
+              </div>
+              <div class="order__button-2">
+                <button>
+                  Оплата на карту
+                </button>
+              </div>
+            </div>
+
+            <div class="order__subtitle-2">
+              Выберете тип доставки:
+            </div>
+
+            <div class="order-inner__button-2">
+
+              <div class="order__item-1">
+                <div class="order__button-3">
+                  <button>
+                    Самовывоз
+                  </button>
+                </div>
+                <div class="order__button-4">
+                  <button>
+                    В отделение Новой Почты
+                  </button>
+                </div>
+              </div>
+
+              <div class="order__item-2">
+                <div class="order__button-5">
+                  <button>
+                    Курьером по Киеву
+                  </button>
+                </div>
+                <div class="order__button-6">
+                  <button>
+                    Курьером Новой Почты
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="order__address">
+              Укажите адрес:
+            </div>
+
+            <div class="box">
+              <form id="ajax-contact-form" enctype="multipart/form-data" method="post">
+                <div class="form-group">
+                  <input name="nameFF" placeholder="Город" type="text" required>
+                </div>
+
+                <div class="form-group">
+                  <input name="nameFF" placeholder="Улица" type="text" required>
+                </div>
+
+                <div class="form-group">
+                  <input name="nameFF" placeholder="Номер дома" type="number" min="1" max="50" required>
+                </div>
+
+                <div class="form-group">
+                  <textarea id="projectFF" name="projectFF" placeholder="Комментарии" cols="40" rows="3"></textarea>
+                </div>
+                <div class="order__button-click"><button class="btn" type="submit" id="submitFF">Оформить заказ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="order__block-2">
+
+            <div class="order__wraper-2">
+
+              <div class="order-wraper__block-1">
+                <img class="order__img" src="images/order-1.png" alt="">
+                <div class="order__text">
+                  PQAge Evolution Plus - Пилинг | Promoitalia
+                  <p>14x3 мл</p>
+                </div>
+                <button class="stepup__minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                <input type="number" min="1" max="99" value="1" readonly class="raz">
+                <button class="stepup__plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                <div class="order__price">97.00 UAH</div>
+              </div>
+
+              <div class="order-wraper__block-2">
+                <img class="order__img" src="images/order-2.png" alt="">
+                <div class="order__text">
+                  LeedFrost Cream (ЛидФрост Крем) 10.56%
+                  <p>50 г</p>
+                </div>
+                <button class="stepup__minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                <input type="number" min="0" max="99" value="1" readonly class="raz">
+                <button class="stepup__plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                <div class="order__price">4613.00 UAH</div>
+              </div>
+
+              <div class="order-wraper__block-3">
+                <img class="order__img" src="images/order-3.png" alt="">
+                <div class="order__text">
+                  Cytocare 532
+                  <p>10x5 мл</p>
+                </div>
+                <button class="stepup__minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                <input type="number" min="1" max="99" value="1" readonly class="raz">
+                <button class="stepup__plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                <div class="order__price">560.00 UAH</div>
+              </div>
+
+              <div class="order__price-inner">
+                <div class="order-inner__block-1">
+                  <div class="order-price__text-1">
+                    сумма заказа:
+                  </div>
+                  <div class="order-price__text-2">
+                    Стоимость доставки:
+                  </div>
+                </div>
+                <div class="order-inner__block-2">
+                  <div class="order-price__money-1">4613.00 UAH</div>
+                  <div class="order-price__money-2">49–150 uan</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+
+      <div class="footer__line"></div>
+
+      <div class="footer__content">
+
+        <div class="footer__inner-1">
+          <div class="footer__title">
+            Derma Care
+          </div>
+          <div class="footer__subtitle">
+            © Derma Care 2020. Все права защищены
+          </div>
+        </div>
+
+        <div class="menu__menu-inner">
+          <nav class="footer__menu">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">О магазине </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Доставка и Оплата</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Бренды </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
